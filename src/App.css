@@ -1,0 +1,123 @@
+body {
+  font-family: "Rasa", serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.text-important {
+  color: #a7bea9;
+  font-size: 30px;
+}
+.sperator {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Header */
+
+header {
+  /* fixed navbar*/
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin : top right bottom left */
+  /* margin : top/bottom right/left */
+  pad: 0 100px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu > li {
+  padding: 10px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+}
+.nav-menu a:hover {
+  color: #a7bea9;
+  text-decoration: underline;
+}
+
+/* Intro Section */
+
+#intro-section {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 130px;
+}
+
+#intro-section > img {
+  border-radius: 50%;
+}
+
+/*annimation */
+
+#intro-section > img:hover {
+  transform: rotate(720deg);
+  transition: 0.8s;
+}
+
+/*Project section */
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 300px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  border-radius: 5px;
+}
+/* card annimation */
+
+.project-card:hover {
+  background-color: black;
+  color: white;
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+
+/*footer*/
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+}
+
+/*responsive  */
+
+@media (max-width: 768px) {
+  #intro-section {
+    flex-direction: column;
+  }
+}
